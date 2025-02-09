@@ -1,0 +1,153 @@
+/* styles.css */
+
+/* Reset Margin dan Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #002855; /* Biru Tua */
+    padding: 15px 80px; /* Lebar lebih besar pada navbar */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .db-info {
+    font-size: 30px; /* Membuat nama manajemen hotel lebih besar */
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px; /* Lebih besar antara menu */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Membuat font lebih besar pada link navigasi */
+    font-weight: bold;
+    padding: 12px 20px; /* Menambah padding untuk tombol lebih besar */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #00509E; /* Biru Lebih Terang */
+}
+
+.nav-link.active {
+    background-color: #FFC107; /* Kuning */
+    color: black;
+}
+
+main {
+    padding: 120px 20px 20px; /* Memberikan ruang agar tidak tertutup navbar yang fixed */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%; /* Menampilkan tabel dengan lebar penuh */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+button.add, button.edit, button.delete {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button.add {
+    background-color: #28a745; /* Hijau */
+}
+
+button.add:hover {
+    background-color: #218838;
+}
+
+button.edit {
+    background-color: #ffc107; /* Kuning */
+}
+
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+button.delete {
+    background-color: #dc3545; /* Merah */
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+/* Tabel dengan warna biru */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #e3f2fd; /* Biru muda untuk latar belakang tabel */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px; /* Lebih besar padding untuk ukuran yang lebih besar */
+    border: 1px solid #90caf9; /* Biru terang untuk border */
+    text-align: center;
+    font-size: 16px; /* Ukuran font di tabel lebih besar */
+}
+
+th {
+    background-color: #64b5f6; /* Biru sedang untuk header */
+    color: white;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #bbdefb; /* Biru muda untuk baris genap */
+}
+
+tr:hover {
+    background-color: #90caf9; /* Biru terang saat hover */
+}
+
+button.edit, button.delete {
+    font-size: 14px;
+    padding: 10px 15px;
+}
